@@ -1,0 +1,123 @@
+ body{
+    background-color: gray;
+ }
+.container 
+{
+display:flex;
+flex-direction: column;
+gap: 30px;
+
+}
+#square{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+
+}
+
+
+.name{
+    
+    font-weight:600;
+    font-size:small;
+}
+.verification{
+opacity:50%;
+}
+
+img{
+    border-radius: 100px;
+    float: left;
+    margin:10px
+    
+}
+.title{
+ font-weight: 600;
+ font-size: xx-large;
+
+}
+
+    
+.comment{
+    font-weight: 500;
+    font-size:large;
+    opacity: 70%;
+}
+
+.box {
+    border:10px hidden;
+    background-color: hsl(0, 0%, 100%) ;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size:13px;
+    padding:20px;
+    border-radius:10px;
+    
+    
+}
+.daniel{
+    background-color:hsl(263, 55%, 52%); 
+    background-image:url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-size:150px;
+}
+
+.jonathan{
+    background-color: hsl(217, 19%, 35%);
+    
+    
+   
+    
+}
+
+
+.patrick{
+    background-color: hsl(219, 29%, 14%);
+    
+}   
+
+.attribution{
+    margin-top: 100%;
+    
+}
+.daniel,.jonathan,.patrick{
+    color:hsl(210, 46%, 95%);
+}
+.jeanette,.kira{
+    color:hsl(217, 19%, 35%);
+}
+@media screen and (min-width:1440px){
+.container{
+    flex-direction:row ;
+    flex-wrap:nowrap;
+    
+    
+}
+
+#square{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex:1 1 85%;
+    height: inherit;
+    flex:1 1 85%;
+}
+
+.jonathan,.jeanette{
+    
+    flex:1 1 25%;
+}
+.daniel,.patrick{
+ 
+    flex:1 1 65%;
+}
+
+
+
+.kira{
+    height:inherit;
+    flex:1 1 15%;
+    align-self: stretch;
+    
+}
+}
